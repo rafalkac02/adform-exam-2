@@ -7,7 +7,10 @@ lazy val root = (project in file("."))
     name := "ex-2"
   )
 
-libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.2.1" % "provided"
-
 libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.12"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.12" % Test
+
+// Kafka Streams
+libraryDependencies += "org.apache.kafka" % "kafka-streams" % "3.1.0"
+libraryDependencies += "org.apache.kafka" %% "kafka-streams-scala" % "3.1.0"
+libraryDependencies += "org.apache.kafka" % "kafka-streams-test-utils" % "3.1.0" % Test
